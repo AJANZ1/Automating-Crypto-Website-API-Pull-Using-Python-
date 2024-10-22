@@ -110,12 +110,17 @@ import seaborn as sns
 import matplotlib.pyplot as plt
 sns.catplot(x='percent_change', y='values', hue='name', data=df7, kind='point')
 
+![image](https://github.com/user-attachments/assets/48afc51d-c635-4751-97b2-15cb88fb2775)
+
+
 df10 = df[['name','quote.USD.price','timestamp']]
 df10 = df10.query("name == 'mjcqei5awg9'")
 df10
 
 sns.set_theme(style="darkgrid")
 sns.lineplot(x='timestamp', y='quote.USD.price', data = df10)
+
+![image](https://github.com/user-attachments/assets/ce5f0ebc-5355-4bba-b208-61477c130d5d)
 
 ```
 
